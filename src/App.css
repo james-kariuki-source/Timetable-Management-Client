@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-menu {
+  display: flex;
+  width: 60%;
+  height: 40%;
+  justify-content: space-around;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  display: flex;
+  background: var(--color-dark);
+  padding: var(--card-padding);
+  width: 30%;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.card:hover{
+  box-shadow: none;
+}
+
+.card i {
+  background: var(--color-primary);
+  padding: 0.77rem;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
+.card h3 {
+  margin: 1rem 0 0.6rem;
+  font-size: 2rem;
+  color: var(--color-white);
+}
+
+.card a{
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
